@@ -1,0 +1,79 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Inter', sans-serif;
+}
+
+header{
+    height: 220px;
+    /*Flex layout: */
+    display: flex;
+    flex-direction: column; /*Configuração que deixa um elemento abaixo do outro (direção em colunas)*/
+    align-items: center; /*Alinhando os elementos ao centro horizontalmente (em relação ao header)*/
+    justify-content: center;/*Centralizando verticalmente (em relação ao header)*/
+}
+
+.logo{
+    margin-bottom: 2rem; /*rem = unidade de medida relativa, 2 vezes o tamanho da fonte (o padrão é 16px)*/
+}
+
+main {
+    background-color: #f5f5f5;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.teacher-container {
+    max-width: 450px; /*A largura máxima alcançada é de 450px. Para valores menores, os elemento são adaptados = responsividade*/
+    margin: auto;
+    margin-bottom: 5rem;
+    text-align: center;
+    padding: 10px;
+}
+
+.teacher-img {
+    width: 100%; /*A imagem irá ocupar 100% da largura da section, ou seja, 450px como especificamos acima*/
+    margin-bottom: 1rem;
+}
+
+.teacher-name {
+    font-weight: 900;
+}
+
+.teacher-price {
+    font-weight: 700;
+    color: #f52273;
+}
+
+.teacher-description {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.teacher-contract {
+    display: flex;
+    justify-content: space-between; /*Todo o espaço que sobra é colocado entre os elementos*/
+}
+
+.teacher-contract-hours {
+    width: 48%; /*Irá ocupar 48% do espaço onde ele está*/
+    color:#565656;;
+    background-color: #f5f5f5;
+    outline: none; /*Faz com que a borda não mude de cor ao clicar*/
+    border: 1px solid #c4c4c4;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.teacher-contract-button {
+    width: 48%;
+    color: #ffffff;
+    background-color: #f52273;
+    border: none;
+    font-weight: 900;
+    transition: background-color 0.5s; /*Toda vez que a propriedade background-color for alterada, a alteração ocorrerá em 0.5s*/
+}
+
+.teacher-contract-button:hover {
+    background-color: #cd1c60;
+}
